@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UCPlanKitMediator+TargetAModule.m"
 @interface ViewController ()
 
 @end
@@ -19,11 +19,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UIViewController *vc = [[UCPlanKitMediator sharedInstance] fetchVC];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 
 @end

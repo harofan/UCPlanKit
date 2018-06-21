@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6B763A320DA3C7500C2E89C /* UCPlanKitMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B763A220DA3C7500C2E89C /* UCPlanKitMediator.m */; };
+		A6B763A620DA40C000C2E89C /* UCPlanKitMediaorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B763A520DA40C000C2E89C /* UCPlanKitMediaorParser.m */; };
+		A6B98A7320DB47AA00D7368C /* TargetA.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7220DB47AA00D7368C /* TargetA.m */; };
+		A6B98A7720DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7620DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.m */; };
+		A6B98A7B20DB4E9700D7368C /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7920DB4E9700D7368C /* VC1.m */; };
+		A6B98A7C20DB4E9700D7368C /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B98A7A20DB4E9700D7368C /* VC1.xib */; };
+		A6B98A7F20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */; };
 		A6C5D41E20DA27430064723C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D41D20DA27430064723C /* AppDelegate.m */; };
 		A6C5D42120DA27430064723C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D42020DA27430064723C /* ViewController.m */; };
 		A6C5D42420DA27430064723C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C5D42220DA27430064723C /* Main.storyboard */; };
@@ -25,6 +32,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6B763A120DA3C7500C2E89C /* UCPlanKitMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediator.h; sourceTree = "<group>"; };
+		A6B763A220DA3C7500C2E89C /* UCPlanKitMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediator.m; sourceTree = "<group>"; };
+		A6B763A420DA40C000C2E89C /* UCPlanKitMediaorParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediaorParser.h; sourceTree = "<group>"; };
+		A6B763A520DA40C000C2E89C /* UCPlanKitMediaorParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediaorParser.m; sourceTree = "<group>"; };
+		A6B763A720DA58E800C2E89C /* UCPlanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKit.h; sourceTree = "<group>"; };
+		A6B98A6F20DB353100D7368C /* UCPlanKitBaseTargetProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitBaseTargetProtocol.h; sourceTree = "<group>"; };
+		A6B98A7120DB47AA00D7368C /* TargetA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetA.h; sourceTree = "<group>"; };
+		A6B98A7220DB47AA00D7368C /* TargetA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetA.m; sourceTree = "<group>"; };
+		A6B98A7520DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitBaseTargetNormalArgument.h; sourceTree = "<group>"; };
+		A6B98A7620DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitBaseTargetNormalArgument.m; sourceTree = "<group>"; };
+		A6B98A7820DB4E9700D7368C /* VC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
+		A6B98A7920DB4E9700D7368C /* VC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
+		A6B98A7A20DB4E9700D7368C /* VC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
+		A6B98A7D20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UCPlanKitMediator+TargetAModule.h"; sourceTree = "<group>"; };
+		A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UCPlanKitMediator+TargetAModule.m"; sourceTree = "<group>"; };
 		A6C5D41920DA27430064723C /* UCPlanKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCPlanKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5D41C20DA27430064723C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6C5D41D20DA27430064723C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +89,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6B7639F20DA3C5B00C2E89C /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				A6B763A120DA3C7500C2E89C /* UCPlanKitMediator.h */,
+				A6B763A220DA3C7500C2E89C /* UCPlanKitMediator.m */,
+			);
+			name = Mediator;
+			path = UCPlanKit/Mediator;
+			sourceTree = "<group>";
+		};
+		A6B763A020DA3C5B00C2E89C /* MediatorParser */ = {
+			isa = PBXGroup;
+			children = (
+				A6B763A420DA40C000C2E89C /* UCPlanKitMediaorParser.h */,
+				A6B763A520DA40C000C2E89C /* UCPlanKitMediaorParser.m */,
+			);
+			name = MediatorParser;
+			path = UCPlanKit/MediatorParser;
+			sourceTree = "<group>";
+		};
+		A6B98A7420DB4A4C00D7368C /* SomeObj */ = {
+			isa = PBXGroup;
+			children = (
+				A6B98A7520DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.h */,
+				A6B98A7620DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.m */,
+			);
+			name = SomeObj;
+			path = UCPlanKit/SomeObj;
+			sourceTree = "<group>";
+		};
 		A6C5D41020DA27430064723C = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +138,10 @@
 		A6C5D41B20DA27430064723C /* UCPlanKit */ = {
 			isa = PBXGroup;
 			children = (
+				A6B763A720DA58E800C2E89C /* UCPlanKit.h */,
+				A6B98A7420DB4A4C00D7368C /* SomeObj */,
+				A6B7639F20DA3C5B00C2E89C /* Mediator */,
+				A6B763A020DA3C5B00C2E89C /* MediatorParser */,
 				A6C5D43620DA28FA0064723C /* Category */,
 				A6C5D43520DA28FA0064723C /* Macro */,
 				A6C5D43320DA28FA0064723C /* Protocol */,
@@ -94,6 +150,13 @@
 				A6C5D41D20DA27430064723C /* AppDelegate.m */,
 				A6C5D41F20DA27430064723C /* ViewController.h */,
 				A6C5D42020DA27430064723C /* ViewController.m */,
+				A6B98A7D20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.h */,
+				A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */,
+				A6B98A7120DB47AA00D7368C /* TargetA.h */,
+				A6B98A7220DB47AA00D7368C /* TargetA.m */,
+				A6B98A7820DB4E9700D7368C /* VC1.h */,
+				A6B98A7920DB4E9700D7368C /* VC1.m */,
+				A6B98A7A20DB4E9700D7368C /* VC1.xib */,
 				A6C5D42220DA27430064723C /* Main.storyboard */,
 				A6C5D42520DA27430064723C /* Assets.xcassets */,
 				A6C5D42720DA27440064723C /* LaunchScreen.storyboard */,
@@ -106,6 +169,7 @@
 		A6C5D43320DA28FA0064723C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				A6B98A6F20DB353100D7368C /* UCPlanKitBaseTargetProtocol.h */,
 			);
 			name = Protocol;
 			path = UCPlanKit/Protocol;
@@ -214,6 +278,7 @@
 			files = (
 				A6C5D42920DA27440064723C /* LaunchScreen.storyboard in Resources */,
 				A6C5D42620DA27430064723C /* Assets.xcassets in Resources */,
+				A6B98A7C20DB4E9700D7368C /* VC1.xib in Resources */,
 				A6C5D42420DA27430064723C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,16 +292,22 @@
 			files = (
 				A6C5D44820DA2A230064723C /* UIView+UCPlanKitExtra.m in Sources */,
 				A6C5D42120DA27430064723C /* ViewController.m in Sources */,
+				A6B763A620DA40C000C2E89C /* UCPlanKitMediaorParser.m in Sources */,
+				A6B98A7F20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m in Sources */,
 				A6C5D42C20DA27440064723C /* main.m in Sources */,
 				A6C5D43C20DA296B0064723C /* UIColor+UCPlanKitExtra.m in Sources */,
 				A6C5D44220DA29C80064723C /* UIImage+UCPlanKitExtra.m in Sources */,
+				A6B98A7B20DB4E9700D7368C /* VC1.m in Sources */,
+				A6B98A7320DB47AA00D7368C /* TargetA.m in Sources */,
 				A6C5D41E20DA27430064723C /* AppDelegate.m in Sources */,
 				A6C5D44B20DA2A510064723C /* UITableViewCell+UCPlanKitExtra.m in Sources */,
 				A6C5D44520DA29EA0064723C /* UIImageView+UCPlanKitExtra.m in Sources */,
 				A6C5D43920DA29440064723C /* UILabel+UCPlanKitExtra.m in Sources */,
 				A6C5D45120DA2A9F0064723C /* UIViewController+UCPlanKitExtra.m in Sources */,
 				A6C5D44E20DA2A6D0064723C /* UIWebView+UCPlanKitExtra.m in Sources */,
+				A6B763A320DA3C7500C2E89C /* UCPlanKitMediator.m in Sources */,
 				A6C5D43F20DA29910064723C /* UIFont+UCPlanKitExtra.m in Sources */,
+				A6B98A7720DB4A7000D7368C /* UCPlanKitBaseTargetNormalArgument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
