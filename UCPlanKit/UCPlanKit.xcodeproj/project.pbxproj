@@ -14,6 +14,7 @@
 		A6B98A7B20DB4E9700D7368C /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7920DB4E9700D7368C /* VC1.m */; };
 		A6B98A7C20DB4E9700D7368C /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B98A7A20DB4E9700D7368C /* VC1.xib */; };
 		A6B98A7F20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */; };
+		A6B98A8620DB7DAB00D7368C /* UCPlanKitResource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A8520DB7DAB00D7368C /* UCPlanKitResource.m */; };
 		A6C5D41E20DA27430064723C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D41D20DA27430064723C /* AppDelegate.m */; };
 		A6C5D42120DA27430064723C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D42020DA27430064723C /* ViewController.m */; };
 		A6C5D42420DA27430064723C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C5D42220DA27430064723C /* Main.storyboard */; };
@@ -29,9 +30,11 @@
 		A6C5D44B20DA2A510064723C /* UITableViewCell+UCPlanKitExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D44A20DA2A510064723C /* UITableViewCell+UCPlanKitExtra.m */; };
 		A6C5D44E20DA2A6D0064723C /* UIWebView+UCPlanKitExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D44D20DA2A6D0064723C /* UIWebView+UCPlanKitExtra.m */; };
 		A6C5D45120DA2A9F0064723C /* UIViewController+UCPlanKitExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D45020DA2A9F0064723C /* UIViewController+UCPlanKitExtra.m */; };
+		B79D6C9629C8778673A0299C /* libPods-UCPlanKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1DB2D8C97E3F7F7996C414 /* libPods-UCPlanKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9827E1B6FF6102372D088617 /* Pods-UCPlanKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCPlanKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCPlanKit/Pods-UCPlanKit.release.xcconfig"; sourceTree = "<group>"; };
 		A6B763A120DA3C7500C2E89C /* UCPlanKitMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediator.h; sourceTree = "<group>"; };
 		A6B763A220DA3C7500C2E89C /* UCPlanKitMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediator.m; sourceTree = "<group>"; };
 		A6B763A420DA40C000C2E89C /* UCPlanKitMediaorParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediaorParser.h; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		A6B98A7A20DB4E9700D7368C /* VC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
 		A6B98A7D20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UCPlanKitMediator+TargetAModule.h"; sourceTree = "<group>"; };
 		A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UCPlanKitMediator+TargetAModule.m"; sourceTree = "<group>"; };
+		A6B98A8420DB7DAB00D7368C /* UCPlanKitResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitResource.h; sourceTree = "<group>"; };
+		A6B98A8520DB7DAB00D7368C /* UCPlanKitResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitResource.m; sourceTree = "<group>"; };
 		A6C5D41920DA27430064723C /* UCPlanKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCPlanKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5D41C20DA27430064723C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6C5D41D20DA27430064723C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +81,8 @@
 		A6C5D44F20DA2A9F0064723C /* UIViewController+UCPlanKitExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UCPlanKitExtra.h"; sourceTree = "<group>"; };
 		A6C5D45020DA2A9F0064723C /* UIViewController+UCPlanKitExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UCPlanKitExtra.m"; sourceTree = "<group>"; };
 		A6C5D45220DA2C690064723C /* UCPlanKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMacro.h; sourceTree = "<group>"; };
+		DD1DB2D8C97E3F7F7996C414 /* libPods-UCPlanKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCPlanKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B68561ECAEC233ADB5FE72 /* Pods-UCPlanKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCPlanKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCPlanKit/Pods-UCPlanKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +90,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79D6C9629C8778673A0299C /* libPods-UCPlanKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B09F8583B04EB5D80E9A9FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0B68561ECAEC233ADB5FE72 /* Pods-UCPlanKit.debug.xcconfig */,
+				9827E1B6FF6102372D088617 /* Pods-UCPlanKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6B7639F20DA3C5B00C2E89C /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +141,8 @@
 			children = (
 				A6C5D41B20DA27430064723C /* UCPlanKit */,
 				A6C5D41A20DA27430064723C /* Products */,
+				3B09F8583B04EB5D80E9A9FA /* Pods */,
+				CD2F4755EF78CA98437ECF50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +197,8 @@
 		A6C5D43420DA28FA0064723C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A6B98A8420DB7DAB00D7368C /* UCPlanKitResource.h */,
+				A6B98A8520DB7DAB00D7368C /* UCPlanKitResource.m */,
 			);
 			name = Resource;
 			path = UCPlanKit/Resource;
@@ -218,6 +239,14 @@
 			path = UCPlanKit/Category;
 			sourceTree = "<group>";
 		};
+		CD2F4755EF78CA98437ECF50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD1DB2D8C97E3F7F7996C414 /* libPods-UCPlanKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C5D42F20DA27440064723C /* Build configuration list for PBXNativeTarget "UCPlanKit" */;
 			buildPhases = (
+				3306D94B7897491ACE03843A /* [CP] Check Pods Manifest.lock */,
 				A6C5D41520DA27430064723C /* Sources */,
 				A6C5D41620DA27430064723C /* Frameworks */,
 				A6C5D41720DA27430064723C /* Resources */,
@@ -285,6 +315,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3306D94B7897491ACE03843A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UCPlanKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6C5D41520DA27430064723C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,6 +345,7 @@
 				A6C5D42120DA27430064723C /* ViewController.m in Sources */,
 				A6B763A620DA40C000C2E89C /* UCPlanKitMediaorParser.m in Sources */,
 				A6B98A7F20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m in Sources */,
+				A6B98A8620DB7DAB00D7368C /* UCPlanKitResource.m in Sources */,
 				A6C5D42C20DA27440064723C /* main.m in Sources */,
 				A6C5D43C20DA296B0064723C /* UIColor+UCPlanKitExtra.m in Sources */,
 				A6C5D44220DA29C80064723C /* UIImage+UCPlanKitExtra.m in Sources */,
@@ -445,14 +497,12 @@
 		};
 		A6C5D43020DA27440064723C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B68561ECAEC233ADB5FE72 /* Pods-UCPlanKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCPlanKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,14 +511,12 @@
 		};
 		A6C5D43120DA27440064723C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9827E1B6FF6102372D088617 /* Pods-UCPlanKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCPlanKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

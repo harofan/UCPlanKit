@@ -13,4 +13,6 @@
 
 @optional
 - (UIViewController *)Action_fetchViewControllerWithArgument:(UCPlanKitBaseTargetNormalArgument *)argumentObj;
+- (UIView *)Action_fetchViewWithArgument:(UCPlanKitBaseTargetNormalArgument *)argumentObj;
+
 @end

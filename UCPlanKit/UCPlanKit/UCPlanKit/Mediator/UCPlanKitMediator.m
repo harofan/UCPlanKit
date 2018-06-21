@@ -20,12 +20,12 @@
 
 + (instancetype)sharedInstance
 {
-    static UCPlanKitMediator *mediator;
+    static UCPlanKitMediator *_mediator;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        mediator = [[UCPlanKitMediator alloc] init];
+        _mediator = [[UCPlanKitMediator alloc] init];
     });
-    return mediator;
+    return _mediator;
 }
 
 - (id)thirdPartyPerformActionWithUrl:(NSString *)urlStr completion:(void (^)(NSDictionary *result))completion{
@@ -41,7 +41,6 @@
                completion:(void (^)(NSDictionary *result))completionCallBack
                   failure:(void (^)(NSError *error))failureCallBack{
     Class classObj = NSClassFromString(targetName);
-//    actionName = [NSString stringWithFormat:@"%@_%@",targetName,actionName];
     SEL actionObj = NSSelectorFromString(actionName);
     NSString *errorStr;
     if (!classObj) {
@@ -89,7 +88,7 @@
         errorStr = [NSString stringWithFormat:@"*%@组件不存在, 请检查调用的url:%@", moduleName, urlStr];
     } else if (!selObj) {
         errorStr = [NSString stringWithFormat:@"*%@组件%@方法调用错误, 请检查调用的url:%@", moduleName, action, urlStr];
-    } else if (![classObj respondsToSelector:selObj]) {
+    } else if (![[classObj new] respondsToSelector:selObj]) {
         errorStr = [NSString stringWithFormat:@"*%@组件没有实现%@方法, 请检查调用的url:%@", moduleName, action, urlStr];
     } else if (afterParserMDict[kUCMediatorErrorKey]){
         errorStr = [NSString stringWithFormat:@"url参数解析错误, url:%@",urlStr];

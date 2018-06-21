@@ -23,4 +23,8 @@
 
 #import "UCPlanKitMacro.h"
 
+#import "UCPlanKitBaseTargetProtocol.h"
+
+#import "UCPlanKitResource.h"
+
 #endif /* UCPlanKit_h */
