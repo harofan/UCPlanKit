@@ -39,7 +39,6 @@
 		A6B763A220DA3C7500C2E89C /* UCPlanKitMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediator.m; sourceTree = "<group>"; };
 		A6B763A420DA40C000C2E89C /* UCPlanKitMediaorParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediaorParser.h; sourceTree = "<group>"; };
 		A6B763A520DA40C000C2E89C /* UCPlanKitMediaorParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediaorParser.m; sourceTree = "<group>"; };
-		A6B763A720DA58E800C2E89C /* UCPlanKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKit.h; sourceTree = "<group>"; };
 		A6B98A6F20DB353100D7368C /* UCPlanKitBaseTargetProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitBaseTargetProtocol.h; sourceTree = "<group>"; };
 		A6B98A7120DB47AA00D7368C /* TargetA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetA.h; sourceTree = "<group>"; };
 		A6B98A7220DB47AA00D7368C /* TargetA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetA.m; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		A6B98A7E20DB4F8900D7368C /* UCPlanKitMediator+TargetAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UCPlanKitMediator+TargetAModule.m"; sourceTree = "<group>"; };
 		A6B98A8420DB7DAB00D7368C /* UCPlanKitResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCPlanKitResource.h; sourceTree = "<group>"; };
 		A6B98A8520DB7DAB00D7368C /* UCPlanKitResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitResource.m; sourceTree = "<group>"; };
+		A6B98ADB20DC85FF00D7368C /* UCPlanKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UCPlanKit.h; path = UCPlanKit/UCPlanKit.h; sourceTree = "<group>"; };
 		A6C5D41920DA27430064723C /* UCPlanKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCPlanKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C5D41C20DA27430064723C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6C5D41D20DA27430064723C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		A6C5D41B20DA27430064723C /* UCPlanKit */ = {
 			isa = PBXGroup;
 			children = (
-				A6B763A720DA58E800C2E89C /* UCPlanKit.h */,
+				A6B98ADB20DC85FF00D7368C /* UCPlanKit.h */,
 				A6B98A7420DB4A4C00D7368C /* SomeObj */,
 				A6B7639F20DA3C5B00C2E89C /* Mediator */,
 				A6B763A020DA3C5B00C2E89C /* MediatorParser */,
@@ -502,7 +502,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCPlanKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,7 +519,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RPGLiker.UCPlanKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
