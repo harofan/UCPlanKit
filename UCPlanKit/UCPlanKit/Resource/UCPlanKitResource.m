@@ -7,7 +7,7 @@
 //
 
 #import "UCPlanKitResource.h"
-#import <YYKit.h>
+#import "YYKit.h"
 
 @implementation UCPlanKitResource
 + (YYMemoryCache *)imageCache {
