@@ -7,7 +7,7 @@
 //
 
 #import "UCPlanKitResource.h"
-#import <YYKit/YYKit.h>
+#import "YYKit.h"
 
 @implementation UCPlanKitResource
 + (YYMemoryCache *)imageCache {
@@ -17,7 +17,7 @@
         cache = [YYMemoryCache new];
         cache.shouldRemoveAllObjectsOnMemoryWarning = NO;
         cache.shouldRemoveAllObjectsWhenEnteringBackground = NO;
-        cache.name = @"MGResource_ImageCache";
+        cache.name = @"UCResource_ImageCache";
     });
     return cache;
 }
