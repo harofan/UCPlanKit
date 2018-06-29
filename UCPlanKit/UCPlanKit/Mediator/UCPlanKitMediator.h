@@ -15,13 +15,13 @@
 // 远程App调用入口
 - (id)thirdPartyPerformActionWithUrl:(NSString *)urlStr
                           completion:(void (^)(NSDictionary *result))completion;
-// 本地组件调用入口推荐
+// 本地组件调用入口不推荐
 - (id)nativePerformActionWithUrl:(NSString *)urlStr
                              arg:(NSDictionary *)arg
                       completion:(void (^)(NSDictionary *result))completionCallBack
                          failure:(void (^)(NSError *error))failureCallBack;
 
-//本地url调用组件,不推荐
+//本地url调用组件,推荐
 - (id)nativePerformTarget:(NSString *)targetName
                    action:(NSString *)actionName
                    params:(NSDictionary *)params
