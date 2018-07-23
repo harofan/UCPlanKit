@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UCPlanKit"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "组件化核心组件"
   s.homepage     = "https://github.com/RPGLiker/UCPlanKit"
   s.license      = "MIT"
