@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/RPGLiker/UCPlanKit.git", :tag => "#{s.version}" , :submodules => true}
   s.requires_arc = true
-  s.dependency 'YYKit'
   s.source_files  = "UCPlanKit/UCPlanKit/UCPlanKit.h"
 
   s.subspec "Category" do |ss|
@@ -21,6 +20,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Protocol" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Protocol/**/*.{h,m}"
+    ss.dependency "UCPlanKit/SomeObj"
     end
 
   s.subspec "Macro" do |ss|
@@ -33,11 +33,13 @@ Pod::Spec.new do |s|
 
   s.subspec "Resource" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Resource/**/*.{h,m}"
+    ss.dependency 'YYKit'
     end
 
   s.subspec "Mediator" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Mediator/**/*.{h,m}"
     ss.dependency 'UCPlanKit/MediatorParser'
+    ss.dependency "UCPlanKit/SomeObj"
     end
 
 end
