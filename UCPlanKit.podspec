@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.source_files  = "UCPlanKit/UCPlanKit/UCPlanKit.h"
 
   s.subspec "Category" do |ss|
-    # ss.source_files = "UCPlanKit/UCPlanKit/Category/UIWebView+UCPlanKitExtra.{h,m}", "UCPlanKit/UCPlanKit/Category/UILabel+UCPlanKitExtra.{h.m}", "UCPlanKit/UCPlanKit/Category/UIColor+UCPlanKitExtra.{h.m}", "UCPlanKit/UCPlanKit/Category/UIImage+UCPlanKitExtra.{h.m}", "UCPlanKit/UCPlanKit/Category/UIFont+UCPlanKitExtra.{h.m}", "UCPlanKit/UCPlanKit/Category/UIView+UCPlanKitExtra.{h.m}", ""
     ss.source_files = "UCPlanKit/UCPlanKit/Category/**/*.{h,m}"
   end
 
@@ -22,19 +21,22 @@ Pod::Spec.new do |s|
 
   s.subspec "Protocol" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Protocol/**/*.{h,m}"
-    # ss.dependency "UCPlanKit/SomeObj"
     end
 
   s.subspec "Macro" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Macro/**/*.{h,m}"
     end
+    
+  s.subspec "MediatorParser" do |ss|
+    ss.source_files = "UCPlanKit/UCPlanKit/MediatorParser/**/*.{h,m}"
+    end
+
   s.subspec "Resource" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Resource/**/*.{h,m}"
     end
 
   s.subspec "Mediator" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Mediator/**/*.{h,m}"
-    # ss.dependency "UCPlanKit/SomeObj"
     end
 
 end
