@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Mediator" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Mediator/**/*.{h,m}"
+    ss.dependency 'UCPlanKit/MediatorParser'
     end
 
 end
