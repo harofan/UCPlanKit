@@ -76,7 +76,7 @@
 /**
  获取这个字符串中的所有xxx的所在的index
  */
-+ (NSMutableArray *)getRangeStr:(NSString *)text findText:(NSString *)findTex;
++ (NSMutableArray *)getRangeStr:(NSString *)text findText:(NSString *)findText;
 
 /**
  打电话
