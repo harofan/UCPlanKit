@@ -9,7 +9,7 @@
 #import "UITableViewCell+UCPlanKitExtra.h"
 
 @implementation UITableViewCell (UCPlanKitExtra)
-+ (NSString *)getCellIDStr
++ (NSString *)uc_getCellIDStr
 {
     return NSStringFromClass([self class]);
 }

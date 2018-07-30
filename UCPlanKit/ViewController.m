@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UCPlanKitMediator+TargetAModule.m"
+
 @interface ViewController ()
 
 @end
@@ -17,12 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UIViewController *vc = [[UCPlanKitMediator sharedInstance] fetchVC];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    UIViewController *vc = [[UCPlanKitMediator sharedInstance] fetchVC];
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
 
 
 

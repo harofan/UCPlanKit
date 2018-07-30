@@ -10,7 +10,7 @@
 
 @implementation UIImageView (UCPlanKitExtra)
 //解析gif文件数据的方法 block中会将解析的数据传递出来
--(void)getGifImageWithUrl:(NSURL *)url returnData:(void(^)(NSArray<UIImage *> * imageArray, NSArray<NSNumber *>*timeArray,CGFloat totalTime, NSArray<NSNumber *>* widths,NSArray<NSNumber *>* heights))dataBlock{
+-(void)uc_getGifImageWithUrl:(NSURL *)url returnData:(void(^)(NSArray<UIImage *> * imageArray, NSArray<NSNumber *>*timeArray,CGFloat totalTime, NSArray<NSNumber *>* widths,NSArray<NSNumber *>* heights))dataBlock{
     //通过文件的url来将gif文件读取为图片数据引用
     CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
     //获取gif文件中图片的个数
@@ -45,9 +45,9 @@
 }
 
 //为UIImageView添加一个设置gif图内容的方法：
--(void)sd_setImage:(NSURL *)imageUrl{
+-(void)uc_setGIFImage:(NSURL *)imageUrl{
     __weak id __self = self;
-    [self getGifImageWithUrl:imageUrl returnData:^(NSArray<UIImage *> *imageArray, NSArray<NSNumber *> *timeArray, CGFloat totalTime, NSArray<NSNumber *> *widths, NSArray<NSNumber *> *heights) {
+    [self uc_getGifImageWithUrl:imageUrl returnData:^(NSArray<UIImage *> *imageArray, NSArray<NSNumber *> *timeArray, CGFloat totalTime, NSArray<NSNumber *> *widths, NSArray<NSNumber *> *heights) {
         //添加帧动画
         CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"contents"];
         NSMutableArray * times = [[NSMutableArray alloc]init];
@@ -69,7 +69,7 @@
     }];
 }
 
-- (void)setCircleImageView{
+- (void)uc_setCircleImageView{
     UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:self.bounds.size];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
     //设置大小

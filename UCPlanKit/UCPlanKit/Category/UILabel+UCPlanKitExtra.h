@@ -12,10 +12,10 @@
 /**
  *  改变行间距
  */
-+ (void)changeLineSpaceForLabel:(UILabel *)label WithSpace:(float)space;
++ (void)uc_changeLineSpaceForLabel:(UILabel *)label WithSpace:(float)space;
 
 /**
  *  改变字间距
  */
-+ (void)changeWordSpaceForLabel:(UILabel *)label WithSpace:(float)space;
++ (void)uc_changeWordSpaceForLabel:(UILabel *)label WithSpace:(float)space;
 @end

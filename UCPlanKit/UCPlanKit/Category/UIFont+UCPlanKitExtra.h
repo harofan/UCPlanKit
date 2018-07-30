@@ -10,20 +10,20 @@
 
 @interface UIFont (UCPlanKitExtra)
 //18
-+ (UIFont *)defaltMaxFont;
++ (UIFont *)uc_defaltMaxFont;
 
 //17
-+ (UIFont *)defaultBigFont;
++ (UIFont *)uc_defaultBigFont;
 
 //15
-+ (UIFont *)defaultNormalFont;
++ (UIFont *)uc_defaultNormalFont;
 
 //16
-+ (UIFont *)defaultMediumFont;
++ (UIFont *)uc_defaultMediumFont;
 
 //11
-+ (UIFont *)defaultSmallFont;
++ (UIFont *)uc_defaultSmallFont;
 
 //10
-+ (UIFont *)defaultMinFont;
++ (UIFont *)uc_defaultMinFont;
 @end

@@ -9,7 +9,9 @@
 #import "UIView+UCPlanKitExtra.h"
 
 @implementation UIView (UCPlanKitExtra)
-- (void)removeAllSubViews{
+
+- (void)uc_removeAllSubViews{
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
+
 @end

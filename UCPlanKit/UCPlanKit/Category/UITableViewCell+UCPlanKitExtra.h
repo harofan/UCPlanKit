@@ -12,5 +12,5 @@
 /**
  获取cell复用ID
  */
-+ (NSString *)getCellIDStr;
++ (NSString *)uc_getCellIDStr;
 @end

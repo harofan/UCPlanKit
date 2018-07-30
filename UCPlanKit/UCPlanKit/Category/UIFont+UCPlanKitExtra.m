@@ -9,32 +9,32 @@
 #import "UIFont+UCPlanKitExtra.h"
 
 @implementation UIFont (UCPlanKitExtra)
-+ (UIFont *)defaltMaxFont;
++ (UIFont *)uc_defaltMaxFont;
 {
     return [UIFont systemFontOfSize:18.f];
 }
 
-+ (UIFont *)defaultBigFont;
++ (UIFont *)uc_defaultBigFont;
 {
     return [UIFont systemFontOfSize:17.f];
 }
 
-+ (UIFont *)defaultNormalFont;
++ (UIFont *)uc_defaultNormalFont;
 {
     return [UIFont systemFontOfSize:15.f];
 }
 
-+ (UIFont *)defaultMediumFont;
++ (UIFont *)uc_defaultMediumFont;
 {
     return [UIFont systemFontOfSize:13.f];
 }
 
-+ (UIFont *)defaultSmallFont;
++ (UIFont *)uc_defaultSmallFont;
 {
     return [UIFont systemFontOfSize:11.f];
 }
 
-+ (UIFont *)defaultMinFont;
++ (UIFont *)uc_defaultMinFont;
 {
     return [UIFont systemFontOfSize:10.f];
 }

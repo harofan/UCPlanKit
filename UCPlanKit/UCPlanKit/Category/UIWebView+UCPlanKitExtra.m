@@ -10,7 +10,7 @@
 
 @implementation UIWebView (UCPlanKitExtra)
 /**清除缓存和cookie*/
-- (void)cleanCacheAndCookie{
+- (void)uc_cleanCacheAndCookie{
     //清除cookies
     NSHTTPCookie *cookie;
     NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];

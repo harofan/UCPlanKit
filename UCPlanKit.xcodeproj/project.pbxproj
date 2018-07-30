@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A625BD22210B3A9300BF9481 /* NSObject+UCPlanKitExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A625BD21210B3A9300BF9481 /* NSObject+UCPlanKitExtra.m */; };
+		A625BD26210B3F8600BF9481 /* UIView+UCPlanKitGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = A625BD25210B3F8600BF9481 /* UIView+UCPlanKitGesture.m */; };
 		A6B98A7320DB47AA00D7368C /* TargetA.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7220DB47AA00D7368C /* TargetA.m */; };
 		A6B98A7B20DB4E9700D7368C /* VC1.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98A7920DB4E9700D7368C /* VC1.m */; };
 		A6B98A7C20DB4E9700D7368C /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B98A7A20DB4E9700D7368C /* VC1.xib */; };
@@ -30,11 +32,20 @@
 		A6C5D42620DA27430064723C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C5D42520DA27430064723C /* Assets.xcassets */; };
 		A6C5D42920DA27440064723C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C5D42720DA27440064723C /* LaunchScreen.storyboard */; };
 		A6C5D42C20DA27440064723C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5D42B20DA27440064723C /* main.m */; };
+		A6F03A4A210B614600836DA9 /* NSString+UCPlanKitExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F03A49210B614600836DA9 /* NSString+UCPlanKitExtra.m */; };
 		B79D6C9629C8778673A0299C /* libPods-UCPlanKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1DB2D8C97E3F7F7996C414 /* libPods-UCPlanKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9827E1B6FF6102372D088617 /* Pods-UCPlanKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCPlanKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCPlanKit/Pods-UCPlanKit.release.xcconfig"; sourceTree = "<group>"; };
+		A625BD1C210AFD9700BF9481 /* UCArgumentValidMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCArgumentValidMacro.h; sourceTree = "<group>"; };
+		A625BD1D210AFE0E00BF9481 /* UCUIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCUIMacro.h; sourceTree = "<group>"; };
+		A625BD1E210AFE4900BF9481 /* UCSystemMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCSystemMacro.h; sourceTree = "<group>"; };
+		A625BD1F210B05FC00BF9481 /* UCOtherMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCOtherMacro.h; sourceTree = "<group>"; };
+		A625BD20210B3A9300BF9481 /* NSObject+UCPlanKitExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+UCPlanKitExtra.h"; sourceTree = "<group>"; };
+		A625BD21210B3A9300BF9481 /* NSObject+UCPlanKitExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UCPlanKitExtra.m"; sourceTree = "<group>"; };
+		A625BD24210B3F8600BF9481 /* UIView+UCPlanKitGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UCPlanKitGesture.h"; sourceTree = "<group>"; };
+		A625BD25210B3F8600BF9481 /* UIView+UCPlanKitGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UCPlanKitGesture.m"; sourceTree = "<group>"; };
 		A6B98A7120DB47AA00D7368C /* TargetA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetA.h; sourceTree = "<group>"; };
 		A6B98A7220DB47AA00D7368C /* TargetA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TargetA.m; sourceTree = "<group>"; };
 		A6B98A7820DB4E9700D7368C /* VC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
@@ -63,7 +74,6 @@
 		A6B98AF120DC8D1300D7368C /* UCPlanKitBaseTargetNormalArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPlanKitBaseTargetNormalArgument.h; sourceTree = "<group>"; };
 		A6B98AF220DC8D1300D7368C /* UCPlanKitBaseTargetNormalArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitBaseTargetNormalArgument.m; sourceTree = "<group>"; };
 		A6B98AF420DC8D1300D7368C /* UCPlanKitBaseTargetProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPlanKitBaseTargetProtocol.h; sourceTree = "<group>"; };
-		A6B98AF620DC8D1300D7368C /* UCPlanKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMacro.h; sourceTree = "<group>"; };
 		A6B98AF820DC8D1300D7368C /* UCPlanKitMediaorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPlanKitMediaorParser.h; sourceTree = "<group>"; };
 		A6B98AF920DC8D1300D7368C /* UCPlanKitMediaorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCPlanKitMediaorParser.m; sourceTree = "<group>"; };
 		A6B98AFA20DC8D1300D7368C /* UCPlanKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPlanKit.h; sourceTree = "<group>"; };
@@ -81,6 +91,8 @@
 		A6C5D42820DA27440064723C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C5D42A20DA27440064723C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C5D42B20DA27440064723C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6F03A48210B614600836DA9 /* NSString+UCPlanKitExtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+UCPlanKitExtra.h"; sourceTree = "<group>"; };
+		A6F03A49210B614600836DA9 /* NSString+UCPlanKitExtra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+UCPlanKitExtra.m"; sourceTree = "<group>"; };
 		DD1DB2D8C97E3F7F7996C414 /* libPods-UCPlanKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCPlanKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B68561ECAEC233ADB5FE72 /* Pods-UCPlanKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCPlanKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCPlanKit/Pods-UCPlanKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +118,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A625BD23210B3F6000BF9481 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A6B98AE320DC8D1300D7368C /* UIView+UCPlanKitExtra.h */,
+				A6B98AEC20DC8D1300D7368C /* UIView+UCPlanKitExtra.m */,
+				A625BD24210B3F8600BF9481 /* UIView+UCPlanKitGesture.h */,
+				A625BD25210B3F8600BF9481 /* UIView+UCPlanKitGesture.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		A6B98ADC20DC8D1300D7368C /* UCPlanKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +147,7 @@
 		A6B98ADD20DC8D1300D7368C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A625BD23210B3F6000BF9481 /* UIView */,
 				A6B98ADE20DC8D1300D7368C /* UIWebView+UCPlanKitExtra.h */,
 				A6B98AE720DC8D1300D7368C /* UIWebView+UCPlanKitExtra.m */,
 				A6B98AEA20DC8D1300D7368C /* UILabel+UCPlanKitExtra.h */,
@@ -134,14 +158,16 @@
 				A6B98AE920DC8D1300D7368C /* UIImage+UCPlanKitExtra.m */,
 				A6B98AE220DC8D1300D7368C /* UIFont+UCPlanKitExtra.h */,
 				A6B98AED20DC8D1300D7368C /* UIFont+UCPlanKitExtra.m */,
-				A6B98AE320DC8D1300D7368C /* UIView+UCPlanKitExtra.h */,
-				A6B98AEC20DC8D1300D7368C /* UIView+UCPlanKitExtra.m */,
 				A6B98AEB20DC8D1300D7368C /* UITableViewCell+UCPlanKitExtra.h */,
 				A6B98AE420DC8D1300D7368C /* UITableViewCell+UCPlanKitExtra.m */,
 				A6B98AE520DC8D1300D7368C /* UIViewController+UCPlanKitExtra.h */,
 				A6B98AEF20DC8D1300D7368C /* UIViewController+UCPlanKitExtra.m */,
 				A6B98AE620DC8D1300D7368C /* UIImageView+UCPlanKitExtra.h */,
 				A6B98AEE20DC8D1300D7368C /* UIImageView+UCPlanKitExtra.m */,
+				A625BD20210B3A9300BF9481 /* NSObject+UCPlanKitExtra.h */,
+				A625BD21210B3A9300BF9481 /* NSObject+UCPlanKitExtra.m */,
+				A6F03A48210B614600836DA9 /* NSString+UCPlanKitExtra.h */,
+				A6F03A49210B614600836DA9 /* NSString+UCPlanKitExtra.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -166,7 +192,10 @@
 		A6B98AF520DC8D1300D7368C /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				A6B98AF620DC8D1300D7368C /* UCPlanKitMacro.h */,
+				A625BD1C210AFD9700BF9481 /* UCArgumentValidMacro.h */,
+				A625BD1D210AFE0E00BF9481 /* UCUIMacro.h */,
+				A625BD1E210AFE4900BF9481 /* UCSystemMacro.h */,
+				A625BD1F210B05FC00BF9481 /* UCOtherMacro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -351,8 +380,10 @@
 				A6B98B0920DC8D1300D7368C /* UIViewController+UCPlanKitExtra.m in Sources */,
 				A6B98B0320DC8D1300D7368C /* UIWebView+UCPlanKitExtra.m in Sources */,
 				A6B98B0D20DC8D1300D7368C /* UCPlanKitMediator.m in Sources */,
+				A625BD26210B3F8600BF9481 /* UIView+UCPlanKitGesture.m in Sources */,
 				A6B98A7B20DB4E9700D7368C /* VC1.m in Sources */,
 				A6B98B0520DC8D1300D7368C /* UIImage+UCPlanKitExtra.m in Sources */,
+				A6F03A4A210B614600836DA9 /* NSString+UCPlanKitExtra.m in Sources */,
 				A6B98B0220DC8D1300D7368C /* UITableViewCell+UCPlanKitExtra.m in Sources */,
 				A6B98A7320DB47AA00D7368C /* TargetA.m in Sources */,
 				A6B98B0620DC8D1300D7368C /* UIView+UCPlanKitExtra.m in Sources */,
@@ -360,6 +391,7 @@
 				A6C5D41E20DA27430064723C /* AppDelegate.m in Sources */,
 				A6B98B0120DC8D1300D7368C /* UILabel+UCPlanKitExtra.m in Sources */,
 				A6B98B0A20DC8D1300D7368C /* UCPlanKitBaseTargetNormalArgument.m in Sources */,
+				A625BD22210B3A9300BF9481 /* NSObject+UCPlanKitExtra.m in Sources */,
 				A6B98B0C20DC8D1300D7368C /* UCPlanKitResource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,6 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCPlanKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

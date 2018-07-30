@@ -12,5 +12,5 @@
 /**
  清除缓存和cookie
  */
-- (void)cleanCacheAndCookie;
+- (void)uc_cleanCacheAndCookie;
 @end

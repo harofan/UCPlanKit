@@ -9,7 +9,7 @@
 #import "UIImage+UCPlanKitExtra.h"
 
 @implementation UIImage (UCPlanKitExtra)
-+(UIImage *)reduceScaleToWidth:(CGFloat)width andImage:(UIImage *)image{
++(UIImage *)uc_reduceScaleToWidth:(CGFloat)width andImage:(UIImage *)image{
     
     //若图片宽度小于传入的压缩后宽度那么直接返回原图
     if (image.size.width <= width) {
@@ -24,7 +24,7 @@
     return returnImage;
 }
 
-+ (UIImage *)reducePhotoScaleToWidth:(CGFloat)width andImage:(UIImage *)image{
++ (UIImage *)uc_reducePhotoScaleToWidth:(CGFloat)width andImage:(UIImage *)image{
     //若图片宽度小于传入的压缩后宽度那么直接返回原图
     if (image.size.width <= width) {
         return image;
@@ -38,7 +38,7 @@
     return returnImage;
 }
 
-+ (UIImage *)extraImageWithColor:(UIColor *)color
++ (UIImage *)uc_extraImageWithColor:(UIColor *)color
 {
     CGFloat imageW = 3;
     CGFloat imageH = 3;
@@ -58,7 +58,8 @@
 }
 
 
-+(UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation
++ (UIImage *)uc_image:(UIImage *)image
+             rotation:(UIImageOrientation)orientation
 {
     long double rotate = 0.0;
     CGRect rect;
@@ -115,7 +116,7 @@
     return newPic;
 }
 
-- (UIImage *)circleImage {
+- (UIImage *)uc_circleImage {
     
     // 开始图形上下文
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);

@@ -10,7 +10,7 @@
 
 @implementation UILabel (UCPlanKitExtra)
 
-+ (void)changeLineSpaceForLabel:(UILabel *)label WithSpace:(float)space {
++ (void)uc_changeLineSpaceForLabel:(UILabel *)label WithSpace:(float)space {
     
     NSString *labelText = label.text;
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labelText];
@@ -22,7 +22,7 @@
     
 }
 
-+ (void)changeWordSpaceForLabel:(UILabel *)label WithSpace:(float)space {
++ (void)uc_changeWordSpaceForLabel:(UILabel *)label WithSpace:(float)space {
     
     NSString *labelText = label.text;
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:labelText attributes:@{NSKernAttributeName:@(space)}];

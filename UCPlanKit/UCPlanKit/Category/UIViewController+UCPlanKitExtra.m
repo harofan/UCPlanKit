@@ -10,7 +10,7 @@
 
 @implementation UIViewController (UCPlanKitExtra)
 //设置状态栏颜色
-- (void)setStatusBarBackgroundColor:(UIColor *)color {
+- (void)uc_setStatusBarBackgroundColor:(UIColor *)color {
     
     UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
     if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
@@ -18,7 +18,7 @@
     }
 }
 
-- (void)startShakeAnimationWithView:(UIView *)view{
+- (void)uc_startShakeAnimationWithView:(UIView *)view{
     // 获取到当前的View
     CALayer *viewLayer = view.layer;
     // 获取当前View的位置
@@ -44,7 +44,7 @@
     [viewLayer addAnimation:animation forKey:nil];
 }
 #pragma mark - 获取根控制器的导航栏控制器
-- (UINavigationController *)getNavigationViewController{
+- (UINavigationController *)uc_getNavigationViewController{
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     
     if ([window.rootViewController isKindOfClass:[UINavigationController class]])

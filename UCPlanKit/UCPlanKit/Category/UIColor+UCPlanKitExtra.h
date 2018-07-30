@@ -10,6 +10,6 @@
 
 @interface UIColor (UCPlanKitExtra)
 
-+ (UIColor *)colorWithHexString:(NSString *)hexString;
++ (UIColor *)uc_colorWithHexString:(NSString *)hexString;
 
 @end

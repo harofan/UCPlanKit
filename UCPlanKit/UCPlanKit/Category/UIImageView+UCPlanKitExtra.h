@@ -10,10 +10,11 @@
 
 @interface UIImageView (UCPlanKitExtra)
 /** 解析gif文件数据的方法 block中会将解析的数据传递出来 */
--(void)getGifImageWithUrl:(NSURL *)url returnData:(void(^)(NSArray<UIImage *> * imageArray,NSArray<NSNumber *>*timeArray,CGFloat totalTime, NSArray<NSNumber *>* widths, NSArray<NSNumber *>* heights))dataBlock;
+-(void)uc_getGifImageWithUrl:(NSURL *)url
+                  returnData:(void(^)(NSArray<UIImage *> * imageArray,NSArray<NSNumber *>*timeArray,CGFloat totalTime, NSArray<NSNumber *>* widths, NSArray<NSNumber *>* heights))dataBlock;
 
 /** 为UIImageView添加一个设置gif图内容的方法： */
--(void)sd_setImage:(NSURL *)imageUrl;
+-(void)uc_setGIFImage:(NSURL *)imageUrl;
 
-- (void)setCircleImageView;
+- (void)uc_setCircleImageView;
 @end

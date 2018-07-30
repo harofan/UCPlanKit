@@ -13,22 +13,23 @@
  缩放图片
  @param width 缩放后的宽度
  */
-+(UIImage *)reduceScaleToWidth:(CGFloat)width andImage:(UIImage *)image;
++(UIImage *)uc_reduceScaleToWidth:(CGFloat)width andImage:(UIImage *)image;
 
 /**
  缩放图片宽高4:3
  */
-+(UIImage *)reducePhotoScaleToWidth:(CGFloat)width andImage:(UIImage *)image;
++(UIImage *)uc_reducePhotoScaleToWidth:(CGFloat)width andImage:(UIImage *)image;
 
 /**
  根据传入color返回相应颜色的图片
  */
-+ (UIImage *)extraImageWithColor:(UIColor *)color;
++ (UIImage *)uc_extraImageWithColor:(UIColor *)color;
 
 /**
  改变图片方向
  */
-+(UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation;
++ (UIImage *)uc_image:(UIImage *)image
+             rotation:(UIImageOrientation)orientation;
 
-- (UIImage *)circleImage;
+- (UIImage *)uc_circleImage;
 @end

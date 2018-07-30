@@ -9,7 +9,7 @@
 #import "UIColor+UCPlanKitExtra.h"
 
 @implementation UIColor (UCPlanKitExtra)
-+ (UIColor *)colorWithHexString:(NSString *)hexString
++ (UIColor *)uc_colorWithHexString:(NSString *)hexString
 {
     NSString *cString = [[hexString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     

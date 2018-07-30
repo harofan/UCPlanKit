@@ -12,5 +12,6 @@
 /**
  删除所有子控件
  */
-- (void)removeAllSubViews;
+- (void)uc_removeAllSubViews;
+
 @end

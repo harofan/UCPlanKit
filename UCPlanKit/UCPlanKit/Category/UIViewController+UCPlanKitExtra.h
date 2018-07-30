@@ -12,15 +12,15 @@
 /**
  设置状态栏颜色
  */
-- (void)setStatusBarBackgroundColor:(UIColor *)color;
+- (void)uc_setStatusBarBackgroundColor:(UIColor *)color;
 
 /**
  获取导航栏
  */
-- (UINavigationController *)getNavigationViewController;
+- (UINavigationController *)uc_getNavigationViewController;
 
 /**
  抖动效果
  */
-- (void)startShakeAnimationWithView:(UIView *)view;
+- (void)uc_startShakeAnimationWithView:(UIView *)view;
 @end
