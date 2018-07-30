@@ -11,7 +11,7 @@
 #import "UCSystemMacro.h"
 
 @implementation NSString (UCPlanKitExtra)
-+ (BOOL)isNum:(NSString *)checkedNumString{
++ (BOOL)uc_isNum:(NSString *)checkedNumString{
     checkedNumString = [checkedNumString stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
     if(checkedNumString.length > 0) {
         return NO;
@@ -19,13 +19,13 @@
     return YES;
 }
 
-+ (NSString *)getNumberWithString:(NSString *)string{
++ (NSString *)uc_getNumberWithString:(NSString *)string{
     NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:@"[a-zA-Z.-]" options:0 error:NULL];
     NSString *result = [regular stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:@""];
     return result;
 }
 
-+ (BOOL)validateIdentityCard:(NSString *)identityCard{
++ (BOOL)uc_validateIdentityCard:(NSString *)identityCard{
     BOOL flag;
     if (identityCard.length <= 0) {
         flag = NO;
@@ -37,7 +37,7 @@
     return [identityCardPredicate evaluateWithObject:identityCard];
 }
 
-+ (BOOL)checkPhoneNumber:(NSString *)phoneNumber{
++ (BOOL)uc_checkPhoneNumber:(NSString *)phoneNumber{
     phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
     if (phoneNumber.length != 11)
     {
@@ -70,7 +70,7 @@
     }
 }
 
-+ (NSString *)MD5_32Bit:(NSString *)str{
++ (NSString *)uc_MD5_32Bit:(NSString *)str{
     const char *cStr = [str UTF8String];
     unsigned char result[16];
     CC_MD5(cStr, strlen(cStr), result);
@@ -84,9 +84,9 @@
     return  str_format.uppercaseString;
 }
 
-+ (NSString *)md5_16Bit:(NSString *)srcString{
++ (NSString *)uc_md5_16Bit:(NSString *)srcString{
     //提取32位MD5散列的中间16位
-    NSString *md5_32Bit_String=[self MD5_32Bit:srcString];
+    NSString *md5_32Bit_String=[self uc_MD5_32Bit:srcString];
     
     NSLog(@"===========s=sssss===%@",md5_32Bit_String);
     NSString *result = [[md5_32Bit_String substringToIndex:24] substringFromIndex:8];//即9～25位
@@ -94,7 +94,7 @@
     return result;
 }
 
-+ (NSString *)URLEncodedString:(NSString *)str{
++ (NSString *)uc_URLEncodedString:(NSString *)str{
     NSString *encodedString = (NSString *)
     CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
                                                               (CFStringRef)str,
@@ -104,7 +104,7 @@
     return encodedString;
 }
 
-+ (NSString *)getChaneseWithBankCode:(NSString*)bankCode{
++ (NSString *)uc_getChaneseWithBankCode:(NSString*)bankCode{
     NSDictionary * bankDict = @{@"CCB":@"中国建设银行",
                                 @"ICBC":@"中国工商银行",
                                 @"ABCB":@"中国农业银行",
@@ -129,7 +129,7 @@
     }
 }
 
-+ (BOOL)isBankCard:(NSString *)cardNumber{
++ (BOOL)uc_isBankCard:(NSString *)cardNumber{
     if(cardNumber.length==0)
     {
         return NO;
@@ -168,7 +168,7 @@
     return modulus == 0;
 }
 
-+ (CGSize)sizeWithString:(NSString *)string
++ (CGSize)uc_sizeWithString:(NSString *)string
                     font:(UIFont *)font
              ParagrapGap:(CGFloat)gap
              withMaxSize:(CGSize)Size{
@@ -181,7 +181,7 @@
     return rect.size;
 }
 
-+ (BOOL)stringContainsEmoji:(NSString *)string{
++ (BOOL)uc_stringContainsEmoji:(NSString *)string{
     __block BOOL returnValue = NO;
     
     [string enumerateSubstringsInRange:NSMakeRange(0, [string length])
@@ -219,7 +219,7 @@
     return returnValue;
 }
 
-+ (CGFloat)getLineNum:(NSString*)str  labelWidth:(CGFloat)width{
++ (CGFloat)uc_getLineNum:(NSString*)str  labelWidth:(CGFloat)width{
     if (str.length<1)
     {
         return 0;
@@ -232,7 +232,7 @@
     return rows;
 }
 
-+ (NSMutableArray *)getRangeStr:(NSString *)text findText:(NSString *)findText{
++ (NSMutableArray *)uc_getRangeStr:(NSString *)text findText:(NSString *)findText{
     
     NSMutableArray *arrayRanges = [NSMutableArray arrayWithCapacity:3];
     
@@ -275,7 +275,7 @@
     return nil;
 }
 
-+ (void)callWithWithOutRemindAndNumber:(NSString *)number{
++ (void)uc_callWithWithOutRemindAndNumber:(NSString *)number{
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",number]];
     if (UC_IOS_VERSION < 10.0) {
         [[UIApplication sharedApplication] openURL:url];
@@ -286,7 +286,7 @@
     }
 }
 
-+ (NSString *)transfromStrToDatestring:(NSString *)string isHaveHour:(BOOL)isHaveHour{
++ (NSString *)uc_transfromStrToDatestring:(NSString *)string isHaveHour:(BOOL)isHaveHour{
     NSTimeInterval time = [string doubleValue]/1000;
     NSDate *detaildate = [NSDate dateWithTimeIntervalSince1970:time];
     NSLog(@"date:%@",[detaildate description]);
@@ -304,7 +304,7 @@
     return currentDateStr;
 }
 
-+ (NSString *)transfromStrToMonthDayDateString:(NSString *)string{
++ (NSString *)uc_transfromStrToMonthDayDateString:(NSString *)string{
     NSTimeInterval time = [string doubleValue]/1000;
     NSDate *detaildate = [NSDate dateWithTimeIntervalSince1970:time];
     NSLog(@"date:%@",[detaildate description]);
@@ -317,13 +317,13 @@
     return currentDateStr;
 }
 
-+ (BOOL)validateEmail:(NSString *)email{
++ (BOOL)uc_validateEmail:(NSString *)email{
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:email]; 
 }
 
-+ (NSString *)getChineseStringWithString:(NSString *)string{
++ (NSString *)uc_getChineseStringWithString:(NSString *)string{
     if (string == nil || [string isEqual:@""])
     {
         return nil;
@@ -347,7 +347,7 @@
     return filterStr;
 }
 
-+ (BOOL)validateIsToday:(NSString *)endTime{
++ (BOOL)uc_validateIsToday:(NSString *)endTime{
     NSDateFormatter *date = [[NSDateFormatter alloc]init];
     
     [date setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -375,7 +375,7 @@
     return NO;
 }
 
-+ (BOOL)beyondToday:(NSString *)endTime{
++ (BOOL)uc_beyondToday:(NSString *)endTime{
     NSDateFormatter *date = [[NSDateFormatter alloc]init];
     
     [date setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -404,7 +404,7 @@
     return NO;
 }
 
-+ (BOOL)isNullWithString:(NSString *)string{
++ (BOOL)uc_isNullWithString:(NSString *)string{
     if (string == nil || string == NULL || string.length == 0) {
         return YES;
     }
@@ -418,7 +418,7 @@
     return NO;
 }
 
-+ (NSAttributedString *)html5StrToAttributedStringWithH5String:(NSString *)h5String{
++ (NSAttributedString *)uc_html5StrToAttributedStringWithH5String:(NSString *)h5String{
     NSString *content = @"";
     if (h5String.length > 0) {
         content = h5String;
@@ -432,7 +432,7 @@
     return html;
 }
 
-+ (BOOL)isSequentialNum:(NSString *)str{
++ (BOOL)uc_isSequentialNum:(NSString *)str{
     if (str.length < 2) {//如果小于两位数直接返回
         return NO;
     }else{
@@ -442,7 +442,7 @@
             if (str.length == 2) {//一直到最后两位还是正确的
                 return YES;
             }else{
-                return [NSString isSequentialNum:[str substringFromIndex:1]];
+                return [NSString uc_isSequentialNum:[str substringFromIndex:1]];
             }
         }else{
             return NO;
