@@ -127,4 +127,14 @@
  是否为连续的数字
  */
 + (BOOL)uc_isSequentialNum:(NSString *)str;
+
+/**
+ 从url get中截取参数
+ */
++ (NSMutableDictionary *)uc_getURLParameters:(NSString *)urlStr;
+
+/**
+ 将中文转为UTF-8字符串,符号不受影响
+ */
+- (NSString *)uc_changeStrToUTF8Str;
 @end
