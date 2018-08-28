@@ -9,7 +9,8 @@
 #ifndef UCCatregory_h
 #define UCCatregory_h
 
-#import "UCUIViewCategory.h"
+#import "UIView+UCPlanKitExtra.h"
+#import "UIView+UCPlanKitGesture.h"
 
 #import "UILabel+UCPlanKitExtra.h"
 #import "UIColor+UCPlanKitExtra.h"

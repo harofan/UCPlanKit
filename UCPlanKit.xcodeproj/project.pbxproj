@@ -47,7 +47,6 @@
 		A625BD24210B3F8600BF9481 /* UIView+UCPlanKitGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UCPlanKitGesture.h"; sourceTree = "<group>"; };
 		A625BD25210B3F8600BF9481 /* UIView+UCPlanKitGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UCPlanKitGesture.m"; sourceTree = "<group>"; };
 		A642E19E2134E77E0089875B /* UCCatregory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCCatregory.h; sourceTree = "<group>"; };
-		A642E19F2134E7E60089875B /* UCUIViewCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCUIViewCategory.h; sourceTree = "<group>"; };
 		A642E1A02134E8270089875B /* UCSomeObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCSomeObj.h; sourceTree = "<group>"; };
 		A642E1A12134E94E0089875B /* UCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCProtocol.h; sourceTree = "<group>"; };
 		A642E1A22134E9C80089875B /* UCMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCMacro.h; sourceTree = "<group>"; };
@@ -130,7 +129,6 @@
 				A6B98AEC20DC8D1300D7368C /* UIView+UCPlanKitExtra.m */,
 				A625BD24210B3F8600BF9481 /* UIView+UCPlanKitGesture.h */,
 				A625BD25210B3F8600BF9481 /* UIView+UCPlanKitGesture.m */,
-				A642E19F2134E7E60089875B /* UCUIViewCategory.h */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
