@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UCPlanKitBaseTargetNormalArgument.h"
+#import "UCSomeObj.h"
 
 @protocol UCPlanKitBaseTargetProtocol <NSObject>
 

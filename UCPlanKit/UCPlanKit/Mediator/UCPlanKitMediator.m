@@ -9,7 +9,7 @@
 #import "UCPlanKitMediator.h"
 #import <objc/runtime.h>
 #import "UCPlanKitMediaorParser.h"
-#import "UCPlanKitBaseTargetNormalArgument.h"
+#import "UCSomeObj.h"
 
 @interface UCPlanKitMediator()
 @property (strong, nonatomic) UCPlanKitMediaorParser *mediaoParser;
@@ -137,6 +137,7 @@
     }
     const char* retType = [methodSig methodReturnType];
     
+    //返回值为void
     if (strcmp(retType, @encode(void)) == 0) {
         NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSig];
         [invocation setArgument:&parObj atIndex:2];
