@@ -12,7 +12,12 @@ Pod::Spec.new do |s|
 
   s.subspec "Category" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/Category/**/*.{h,m}"
-  end
+
+    ss.subspec "UIView" do |sss|
+    	sss.source_files = "UCPlanKit/UCPlanKit/Category/UIView/**/*.{h,m}"
+    	end
+    	
+    end
 
   s.subspec "SomeObj" do |ss|
     ss.source_files = "UCPlanKit/UCPlanKit/SomeObj/**/*.{h,m}"
